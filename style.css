@@ -23,7 +23,7 @@ li {
 
 .container {
     max-width: 1200px;
-    justify-content: center;
+    /* justify-content: center; */
     margin: 0 auto;
 }
 
@@ -74,12 +74,9 @@ a, .intro-para {
 }
 
 /* some random information */
-/* flexed and aligned the only content in this container so it can be centered  */
 /* the padding is there to create space around this heading */
 .container .boxes-heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     margin-bottom: 30px;
 
 /* instructions said */
@@ -123,4 +120,43 @@ a, .intro-para {
 /* creating some padding around the content in .container so they are far from the other sections  */
 .content .container {
     padding: 30px 20px 50px;
+}
+
+/* QUOTE SECTION */
+
+/* recommended color on the main article container so every item inside can inherit it  */
+article {
+    background-color: #e5e7eb;
+}
+
+/* in other to center contents, it's best to center from the main container. i struggled with this */
+article .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* width is there to wrap the content to the number of lines i wanted */
+/* the rest are recommended styles */
+.container .quote-container {
+    width: 950px;
+    font-size: 36px;
+    color: #1f2937;
+    padding: 80px 10px 80px;
+}
+
+/* i think putting italics in css gives you more pixel precision than inside the HTML */
+/* sticking to this */
+.container .quote {
+    font-style: italic;
+}
+
+/* i thought i'd have to flex and change flex direction but it is this simple */
+/* putting this inside its own div, it is this simple to style this way. */
+/* always use start center end NOT left center right */
+.container .author {
+    text-align: end;
+    font-size: 24px;
+    font-weight: bold;
 }
