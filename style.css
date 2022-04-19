@@ -4,7 +4,6 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     height: 100vh;
 }
 
@@ -23,7 +22,7 @@ li {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1200px;
     justify-content: center;
     margin: 0 auto;
 }
@@ -50,7 +49,7 @@ a, .intro-para {
     background-color: #1f2937;
 }
 
-.intro-sign-up {
+.intro-sign-up, .button-two {
     background-color: #3882f6;
     padding: 5px 15px;
     color: white;
@@ -72,4 +71,56 @@ a, .intro-para {
 
 .navbar ul {
     display: flex;
+}
+
+/* some random information */
+/* flexed and aligned the only content in this container so it can be centered  */
+/* the padding is there to create space around this heading */
+.container .boxes-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+/* instructions said */
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
+/* the four images have a container called .boxes */
+/* the boxes are flexed and aligned in the center both horizontally and vertically */
+/* each item in .boxes is gapped 10px from each other */
+.content .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* the 4 individual images were styled the same with the .img class*/
+/* border-box has been declared to make the size/content of the box exactly 200px */
+/* if not the total size will be 202px including the 2px border around the image */
+/* this is done so that the box will be exactly the same width as the caption */
+.content .img {
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #3882f6;
+    border-radius: 8px;
+}
+
+/* THE FOUR ITEMS FLEXED ARE ACTUALLY TWO BLOCK ELEMENTS. THE IMG AND A DIV AS ITS CAPTION */
+
+/* had border-box not been declared in .img to remove the weird 2px margin to the right of this caption */
+/* the size must be declared here to restrict the width of the caption to stay under the images */
+/* and aligned center to look nice */
+.content .box-caption {
+    width: 200px;
+    text-align: center;
+}
+
+/* creating some padding around the content in .container so they are far from the other sections  */
+.content .container {
+    padding: 30px 20px 50px;
 }

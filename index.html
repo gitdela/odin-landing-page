@@ -51,25 +51,25 @@
 <!-- this div.container will automatically pick the color of the navbar -->
 <!-- it will be assigned a max width to help restrict its width -->
 <!-- with a sufficient max-width and margin auto left right, its content will be centered with good margin on the page -->
-            <h3>Some random information.</h3>
+            <div class="boxes-heading">Some random information.</div>
             <div class="boxes">
-                <figure>
-                    <div class="box"></div>
-<!-- the divs are empty here. when i make a border around them, it will create a box -->
-                    <figcaption>this is some subtext under an illustration or image</figcaption>
-                </figure>
-                <figure>
-                    <div class="box"></div>
-                    <figcaption>this is some subtext under an illustration or image</figcaption>
-                </figure>
-                <figure>
-                    <div class="box"></div>
-                    <figcaption>this is some subtext under an illustration or image</figcaption>
-                </figure>
-                <figure>
-                    <div class="box"></div>
-                    <figcaption>this is some subtext under an illustration or image</figcaption>
-                </figure>
+                <div class="imgandcap">
+                    <img src="https://unsplash.it/200/200" alt="image 1" class="img">
+                    <div class="box-caption">this is some subtext under an illustration or image</div>
+                </div>
+                <div class="imgandcap">
+                    <img src="https://unsplash.it/200/200" alt="image 2" class="img">
+                    <div class="box-caption">this is some subtext under an illustration or image</div>
+                </div>
+                <div class="imgandcap">
+                    <img src="https://unsplash.it/200/200" alt="image 3" class="img">
+                    <div class="box-caption">this is some subtext under an illustration or image</div>
+                </div>
+                <div class="imgandcap">
+                    <img src="https://unsplash.it/200/200" alt="image 5" class="img">
+                    <div class="box-caption">this is some subtext under an illustration or image</div>
+                </div>
+            </div>
         </div>  
     </section>
 
@@ -100,8 +100,8 @@
                 <h4>Call to action! It's time!</h4>
                 <p>Sign up for our product by clicking that button right over there!</p>
             </div> 
-            <div class="button-two">
-            <button>Sign up</button>
+            <div>
+            <button class="button-two">Sign up</button>
             </div>
         </div>
     </section>
