@@ -4,7 +4,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 ul {
@@ -23,7 +23,6 @@ li {
 
 .container {
     max-width: 1200px;
-    /* justify-content: center; */
     margin: 0 auto;
 }
 
@@ -49,10 +48,11 @@ a, .intro-para {
     background-color: #1f2937;
 }
 
-.intro-sign-up, .button-two {
+.intro-sign-up {
     background-color: #3882f6;
-    padding: 5px 15px;
+    padding: 8px 25px;
     color: white;
+    border: none;
     border-radius: 5px;
 }
 
@@ -125,16 +125,12 @@ a, .intro-para {
 /* QUOTE SECTION */
 
 /* recommended color on the main article container so every item inside can inherit it  */
+/* in other to center contents, it's best to center from the main container. i struggled with this */
 article {
     background-color: #e5e7eb;
-}
-
-/* in other to center contents, it's best to center from the main container. i struggled with this */
-article .container {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 /* width is there to wrap the content to the number of lines i wanted */
@@ -159,4 +155,41 @@ article .container {
     text-align: end;
     font-size: 24px;
     font-weight: bold;
+}
+
+/* to get the text and button in the 'call to action' to align centrally */
+.call-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* the width specified the size you see on the size. if not the container takes the full page */
+
+/* notice you don't have to put a border before declaring a border-radius */
+.call-action .container {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882f6;
+    color: white;
+    margin: 70px 50px;
+    padding: 30px 100px;
+    border-radius: 8px;
+}
+
+/* recommended styles for the text in 'call to action' */
+.call-action .call-action-text {
+    font-size: large;
+    font-weight: bold;
+}
+
+/* recommended styles for the sign up button in 'call to action' */
+.call-action .button-two {
+    background-color: #3882f6;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 25px;
 }
